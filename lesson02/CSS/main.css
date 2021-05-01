@@ -1,0 +1,33 @@
+@media only screen and (min-width: 0em){
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: span 3;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #first {
+        text-align: center;
+        background-color: darkgoldenrod;
+        padding: 0.5rem;
+    }
+
+    #second {
+        text-align: center;
+        color: white;
+        background-color:firebrick;
+        padding: 0.5rem;
+    }
+
+    #third {
+        text-align: center;
+        background-color:dodgerblue;
+        padding: 0.5rem;
+    }
+}

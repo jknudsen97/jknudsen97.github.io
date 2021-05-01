@@ -5,11 +5,14 @@ footer {
 }
 
 body {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header img {
+    padding: 1rem;
     float: right;
     width: 200px;
     height: auto;
