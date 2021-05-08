@@ -1,0 +1,38 @@
+@media only screen and (min-width: 0em){
+    
+    h1{
+        display: block;
+        text-align: center;
+    }
+
+    main{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    img{
+        position: relative;
+        float: left;
+        width: 100px;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .list{
+        justify-content: center;
+        list-style-position: inside;
+    }
+    .navbar{
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+        display: block;
+        list-style-position: inside;
+    }
+
+    .navbar li{
+        justify-content: center;
+        position: relative;
+        margin: 5px;
+    }
+}
