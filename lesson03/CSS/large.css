@@ -1,13 +1,4 @@
 @media only screen and (min-width: 50em){
-
-    div{
-        max-width: 100%;
-        text-align: center;
-        display: flex;
-        padding: 5px;
-        line-height: 1.5;
-        margin: 5px;
-    }
     img{
         position: absolute;
         float: left;
@@ -15,8 +6,9 @@
         height: auto;
         margin: 10px;
     }
-   
+
     .navbar{
+        max-width: 50%;
         text-align: center;
         justify-content: center;
         display: flex;
@@ -25,5 +17,9 @@
 
     .navbar li{
         position: relative;
+    }
+
+    ul{
+        margin: 0 auto;
     }
 }
