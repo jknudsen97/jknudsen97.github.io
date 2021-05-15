@@ -1,0 +1,106 @@
+header {
+    background-color: #0066ff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 50px;
+    height: auto;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    text-align: center;
+}
+
+p{
+    justify-content: center;
+    background-color: beige;
+    padding: 25px;
+    margin: 20px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    margin: 0 0 0 15px;
+}
+
+.motto{
+    font-style: italic;
+    color: greenyellow;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.nav{
+    overflow: hidden;
+    background-color: lightblue;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu li{
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav #links{
+    display: none;
+}
+
+.nav a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover{
+    background-color:#0066ff;
+    color: black;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+footer {
+    color: white;
+    background-color: #0066ff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
