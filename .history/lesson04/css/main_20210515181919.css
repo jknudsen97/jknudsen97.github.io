@@ -11,6 +11,41 @@ header img{
     height: auto;
 }
 
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    margin: 0 0 0 15px;
+}
+
+.motto{
+    font-style: italic;
+    color: #ffbf00;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.nav{
+    overflow: hidden;
+    background-color: #0066ff;
+    position: relative;
+}
+header {
+    background-color: #0066ff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 50px;
+    height: auto;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -104,4 +139,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.nav #links{
+    display: none;
+}
+
+.nav a{
+    color: white;
+    padding: 12px 14px;
+    font-size: 13px;
+    dis
 }

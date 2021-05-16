@@ -1,4 +1,4 @@
-@media only screen and (max-width: 80em){
+@media only screen and (max-width: 60em){
     .menu{
         position: fixed;
         left: -100%;
@@ -33,8 +33,12 @@
     }
 
     .headings h1{
-        font-size: 6rem;
+        font-size: 3rem;
     }
 
+    .header img{
+        width: 120px;
+        height: auto;
+    }
 
 }

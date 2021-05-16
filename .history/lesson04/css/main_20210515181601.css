@@ -19,28 +19,21 @@ main{
     text-align: center;
 }
 
-p{
-    justify-content: center;
-    background-color: beige;
-    padding: 25px;
-    margin: 20px;
-}
-
 .headings {
     display: flex;
     flex-direction: column;
 }
 
 .headings h1{
-    font-size: 1em;
+    font-size: 1.5rem;
     margin: 0 0 0 15px;
 }
 
 .motto{
     font-style: italic;
-    color: greenyellow;
+    color: #ffbf00;
     margin-left: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .nav{
@@ -51,7 +44,6 @@ p{
 
 .menu{
     display: flex;
-    justify-content: space-between;
     text-align: center;
     list-style-type: none;
     flex-direction: row;
@@ -95,13 +87,4 @@ p{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: black;
-}
-
-footer {
-    color: white;
-    background-color: #0066ff;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

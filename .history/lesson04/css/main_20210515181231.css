@@ -64,6 +64,8 @@ p{
     text-align: center;
     justify-content: center;
     position: relative;
+    flex-direction: column;
+    background-color: #ffbf00;
 }
 
 .nav #links{
