@@ -28,7 +28,7 @@ weekday[6] = "Saturday";
 var n = weekday[d.getDay()];
 document.querySelector("#currentDayofWeek").innerHTML = n;
 
-var n = d.getDate();
+var n = d.getDay();
 document.querySelector("#currentDay").innerHTML = n;
 
 var month = new Array();
