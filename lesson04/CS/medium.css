@@ -15,4 +15,8 @@
     .hamburger{
         display: none;
     }
+
+    footer{
+        flex-direction: row;
+    }
 }
