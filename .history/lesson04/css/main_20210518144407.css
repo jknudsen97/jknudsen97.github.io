@@ -75,10 +75,6 @@ p{
     display: flex;
 }
 
-li{
-    list-style-type: none;
-}
-
 .nav #links{
     display: none;
 }

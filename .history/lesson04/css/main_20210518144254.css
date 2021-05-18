@@ -50,6 +50,7 @@ p{
 }
 
 .menu{
+    text-decoration: none;
     overflow: hidden;
     display: none;
 }
@@ -64,7 +65,6 @@ p{
 }
 
 .menu li{
-    text-decoration: none;
     padding: 10px;
     flex: 1;
     text-align: center;
@@ -73,10 +73,6 @@ p{
 
 .menu.active{
     display: flex;
-}
-
-li{
-    list-style-type: none;
 }
 
 .nav #links{

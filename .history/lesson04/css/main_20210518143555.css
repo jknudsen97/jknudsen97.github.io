@@ -50,11 +50,14 @@ p{
 }
 
 .menu{
+    text-decoration: none;
     overflow: hidden;
     display: none;
+    position: relative;
 }
 
 .menu a{
+    text-decoration: none;
     justify-content: space-between;
     text-align: center;
     list-style-type: none;
@@ -64,19 +67,11 @@ p{
 }
 
 .menu li{
-    text-decoration: none;
     padding: 10px;
     flex: 1;
     text-align: center;
     justify-content: center;
-}
-
-.menu.active{
-    display: flex;
-}
-
-li{
-    list-style-type: none;
+    position: relative;
 }
 
 .nav #links{

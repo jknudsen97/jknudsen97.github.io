@@ -51,7 +51,7 @@ p{
 
 .menu{
     overflow: hidden;
-    display: none;
+    /*display: none;*/
 }
 
 .menu a{

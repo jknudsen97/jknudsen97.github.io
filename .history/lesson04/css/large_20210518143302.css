@@ -1,7 +1,7 @@
-@media only screen and (max-width: 60em){
+@media only screen and (min-width: 60em){
     .menu{
         display: flex;
-        /*position: fixed;*/
+        position: fixed;
         left: -100%;
         top: 5rem;
         border-radius: 10px;
@@ -10,6 +10,10 @@
         transition: 0.3s;
         box-shadow: 
             0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .menu.active{
+        left: 0;
     }
 
     .hamburger{

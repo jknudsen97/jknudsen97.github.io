@@ -12,6 +12,10 @@
             0 10px 30px rgba(0, 0, 0, 0.05);
     }
 
+    .menu.active{
+        left: 0;
+    }
+
     .hamburger{
         display: block;
         cursor: pointer;

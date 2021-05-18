@@ -64,7 +64,6 @@ p{
 }
 
 .menu li{
-    text-decoration: none;
     padding: 10px;
     flex: 1;
     text-align: center;
@@ -76,7 +75,7 @@ p{
 }
 
 li{
-    list-style-type: none;
+    text-decoration: none;
 }
 
 .nav #links{
