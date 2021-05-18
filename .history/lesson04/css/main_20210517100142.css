@@ -85,6 +85,11 @@ p{
     top: 0;
 }
 
+.topnav a:hover{
+    background-color:#0066ff;
+    color: black;
+}
+
 .hamburger{
     display: none;
 }

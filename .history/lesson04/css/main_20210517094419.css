@@ -50,19 +50,19 @@ p{
 }
 
 .menu{
+    text-decoration: none;
     overflow: hidden;
-    display: none;
+    background-color: #ffbf00;
     position: relative;
 }
 
-.menu a{
-    text-decoration: none;
+.active{
+    display: block;
     justify-content: space-between;
     text-align: center;
     list-style-type: none;
     flex-direction: row;
     align-items: center;
-    display: block;
 }
 
 .menu li{
@@ -70,11 +70,23 @@ p{
     flex: 1;
     text-align: center;
     justify-content: center;
-    position: relative;
 }
 
-.nav #links{
+.menu #links{
     display: none;
+}
+
+.menu a{
+    color: black;
+    padding: 5px 7px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+.menu a:hover{
+    background-color: aliceblue;
+    color: black;
 }
 
 .nav a.icon{

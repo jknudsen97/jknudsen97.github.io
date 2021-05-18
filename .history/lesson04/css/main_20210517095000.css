@@ -50,19 +50,16 @@ p{
 }
 
 .menu{
-    overflow: hidden;
     display: none;
-    position: relative;
 }
 
-.menu a{
-    text-decoration: none;
+.active{
+    display: block;
     justify-content: space-between;
     text-align: center;
     list-style-type: none;
     flex-direction: row;
     align-items: center;
-    display: block;
 }
 
 .menu li{
@@ -70,11 +67,21 @@ p{
     flex: 1;
     text-align: center;
     justify-content: center;
-    position: relative;
 }
 
-.nav #links{
+.menu #links{
     display: none;
+}
+
+.menu a{
+    color: black;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover{
+    
 }
 
 .nav a.icon{

@@ -50,9 +50,7 @@ p{
 }
 
 .menu{
-    overflow: hidden;
     display: none;
-    position: relative;
 }
 
 .menu a{
@@ -83,6 +81,11 @@ p{
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.topnav a:hover{
+    background-color:#0066ff;
+    color: black;
 }
 
 .hamburger{

@@ -50,19 +50,11 @@ p{
 }
 
 .menu{
-    overflow: hidden;
-    display: none;
-    position: relative;
-}
-
-.menu a{
-    text-decoration: none;
     justify-content: space-between;
     text-align: center;
     list-style-type: none;
     flex-direction: row;
     align-items: center;
-    display: block;
 }
 
 .menu li{
@@ -83,6 +75,16 @@ p{
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.topnav a:hover{
+    background-color:#0066ff;
+    color: black;
+}
+
+li {
+    display: block;
+    width: 50px;
 }
 
 .hamburger{

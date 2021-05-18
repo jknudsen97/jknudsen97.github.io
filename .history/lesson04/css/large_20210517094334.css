@@ -1,6 +1,9 @@
 @media only screen and (max-width: 60em){
+    .ul menu{
+        text-decoration: none;
+    }
+    
     .menu{
-        display: flex;
         position: fixed;
         left: -100%;
         top: 5rem;

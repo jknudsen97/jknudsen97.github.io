@@ -50,19 +50,12 @@ p{
 }
 
 .menu{
-    overflow: hidden;
-    display: none;
-    position: relative;
-}
-
-.menu a{
-    text-decoration: none;
+    display: flex;
     justify-content: space-between;
     text-align: center;
     list-style-type: none;
     flex-direction: row;
     align-items: center;
-    display: block;
 }
 
 .menu li{
@@ -85,6 +78,11 @@ p{
     top: 0;
 }
 
+.topnav a:hover{
+    background-color:#0066ff;
+    color: black;
+}
+
 .hamburger{
     display: none;
 }
@@ -100,7 +98,7 @@ p{
 }
 
 footer {
-    margin: 10 px;
+    margin: 10 px
     color: white;
     background-color: #0066ff;
     padding: 5px;
