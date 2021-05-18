@@ -76,7 +76,7 @@ p{
 }
 
 .menu.active{
-    display: block;
+    display: flex;
     padding-inline-start: 0px;
 }
 

@@ -76,12 +76,14 @@ p{
 }
 
 .menu.active{
+    display: flex;
     display: block;
     padding-inline-start: 0px;
 }
 
-a.link{
-    padding: 7.5px;
+.nav #links{
+    padding: 50px;
+    display: none;
 }
 
 .nav a.icon{

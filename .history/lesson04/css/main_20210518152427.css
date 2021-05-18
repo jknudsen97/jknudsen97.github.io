@@ -57,12 +57,10 @@ p{
 .menu li{
     list-style: none;
     text-decoration: none;
+    padding: 10px;
     flex: 1;
     text-align: center;
     justify-content: center;
-    box-sizing: border-box;
-    padding: 0px;
-    line-height: 1.5rem;
 }
 
 .menu a{
@@ -75,13 +73,17 @@ p{
     display: block;
 }
 
-.menu.active{
-    display: block;
-    padding-inline-start: 0px;
+.menu a:hover{
+    background-color: #ffb00f;
 }
 
-a.link{
-    padding: 7.5px;
+.menu.active{
+    display: flex;
+    display: block;
+}
+
+.nav #links{
+    display: none;
 }
 
 .nav a.icon{

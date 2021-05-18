@@ -51,18 +51,9 @@ p{
 
 .menu{
     overflow: hidden;
-    display: none;
-}
-
-.menu li{
-    list-style: none;
-    text-decoration: none;
-    flex: 1;
-    text-align: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0px;
-    line-height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu a{
@@ -73,15 +64,25 @@ p{
     flex-direction: row;
     align-items: center;
     display: block;
+    text-decoration: none;
+}
+
+.menu li{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
 }
 
 .menu.active{
+    display: flex;
     display: block;
-    padding-inline-start: 0px;
 }
 
-a.link{
-    padding: 7.5px;
+.nav #links{
+    display: none;
 }
 
 .nav a.icon{
