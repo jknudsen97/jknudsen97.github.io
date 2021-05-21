@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1>📘 Book of Mormon - Top 25</h1>
+<main>
+	<div class="input">
+		<label for="chapter">Enter Book and Chapter</label>
+		<input id="chapter" type="text" id="fav" placeholder="Alma 5">
+		<button type="button">Add Chapter</button>
+	</div>
+	<div class="list">
+		<ul>
+
+		</ul>
+	</div>
+</main>
+<script src="js/script.js"></script>
+<script>
+button.onclick = function() {
+    let myItem = input.value;
+    input.value = '';
+
+    const list = document.querySelector('ul');
+    const input = document.querySelector('input');
+    const button = document.querySelector('button');
+
+    listItem.appendChild(listText);
+    listText.textContent = myItem;
+    listItem.appendChild(listBtn);
+    listBtn.textContent = 'Delete';
+    list.appendChild(listItem);
+
+    listBtn.onclick = function(e) {
+        list.removeChild(listItem);
+    }
+
+    input.focus();
+    }
+</script>
+</body>
+</html>
