@@ -69,8 +69,15 @@
     }
 
     .summary{
-        top: 275px;
-        right: 50px;
+        left: 150px;
+        bottom: 120px;
+        position: sticky;
+        max-width: 25%;
+        height: auto;
+        display: block;
+        color: red;
+        background-color: rgba(34, 99, 185, 0.5);
+        z-index: 3;
     }
     
     .sum-titles{
@@ -81,14 +88,9 @@
         max-width: 50%;
         height: auto;
     }
-
-    .nav a:active{
-        background-color: white;
-    }
-
-    .nav a:hover{
-        background-color: green;
-        color: white;
+    
+    .s-color{
+        color: orange;
     }
     
 }

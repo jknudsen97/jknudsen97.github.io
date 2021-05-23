@@ -82,7 +82,7 @@
         height: auto;
     }
 
-    .nav a:active{
+    .nav active{
         background-color: white;
     }
 

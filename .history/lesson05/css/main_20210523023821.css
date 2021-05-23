@@ -192,13 +192,13 @@ footer {
 
 .summary{
     position: absolute;
-    top: 240px;
+    top: 275px;
     right: 50px;
     background: radial-gradient(#eee, red);
     border: 1px solid #000;
-    padding: 0.15rem;
+    padding: 0.25rem;
     box-shadow: 0 0 30px #333;
-    opacity: .9;
+    opacity: .8;
 }
 
 .s-color{

@@ -53,7 +53,7 @@ document.querySelector("#currentYear").innerHTML = n;
 
 //Lesson05
 
-/*var header = document.querySelector("#nav");
+var header = document.querySelector("#nav");
 var btns = header.getElementsByClassName("link");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
@@ -63,4 +63,4 @@ for (var i = 0; i < btns.length; i++) {
   }
   this.className += " active";
   });
-}*/
+}

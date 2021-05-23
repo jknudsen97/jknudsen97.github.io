@@ -82,8 +82,8 @@
         height: auto;
     }
 
-    .nav a:active{
-        background-color: white;
+    .active{
+        text-decoration: underline;
     }
 
     .nav a:hover{

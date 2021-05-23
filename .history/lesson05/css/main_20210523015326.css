@@ -191,16 +191,5 @@ footer {
 }
 
 .summary{
-    position: absolute;
-    top: 240px;
-    right: 50px;
-    background: radial-gradient(#eee, red);
-    border: 1px solid #000;
-    padding: 0.15rem;
-    box-shadow: 0 0 30px #333;
-    opacity: .9;
-}
-
-.s-color{
-    color: white;
+    display: grid;
 }
