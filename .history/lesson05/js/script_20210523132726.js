@@ -65,17 +65,10 @@ for (var i = 0; i < btns.length; i++) {
   });
 }*/
 
-const current = 0;
-for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href === document.URL) {
-        current = i;
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
     }
-}
-document.links[current].className = 'current';
-
-let thedate = new Date();
-
-if (thedate.getDay() == 5)
-{
-  document.className('#banner').style.display = 'block';
-}
+  });
+});

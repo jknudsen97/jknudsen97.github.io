@@ -192,7 +192,6 @@ footer {
 
 .summary{
     display: block;
-    position: absolute;
     top: 240px;
     right: 50px;
     background: radial-gradient(#eee, red);
@@ -204,11 +203,4 @@ footer {
 
 .s-color{
     color: white;
-}
-
-.banner{
-    background-color: lightsalmon;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }

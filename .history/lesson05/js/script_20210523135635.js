@@ -77,5 +77,5 @@ let thedate = new Date();
 
 if (thedate.getDay() == 5)
 {
-  document.className('#banner').style.display = 'block';
+  document.querySelector('#banner').style.display = 'block';
 }

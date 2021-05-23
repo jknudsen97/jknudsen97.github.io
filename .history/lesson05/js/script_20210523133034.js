@@ -72,10 +72,3 @@ for (var i = 0; i < document.links.length; i++) {
     }
 }
 document.links[current].className = 'current';
-
-let thedate = new Date();
-
-if (thedate.getDay() == 5)
-{
-  document.className('#banner').style.display = 'block';
-}

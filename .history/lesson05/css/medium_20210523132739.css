@@ -91,7 +91,7 @@
         color: white;
     }
     
-    .current {
+    .nav a.current {
         background:darkblue;
         color:white;
       }
