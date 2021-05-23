@@ -1,0 +1,168 @@
+header {
+    background-color: #0066ff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 50px;
+    height: auto;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    text-align: center;
+}
+
+p{
+    justify-content: center;
+    background-color: beige;
+    padding: 25px;
+    margin: 20px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1{
+    font-size: 1em;
+    margin: 0 0 0 15px;
+}
+
+.motto{
+    font-style: italic;
+    color: white;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.nav{
+    overflow: hidden;
+    background-color: lightblue;
+    position: relative;
+}
+
+.menu{
+    overflow: hidden;
+    display: none;
+}
+
+.menu li{
+    list-style: none;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+.menu a{
+    color: black;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+    display: block;
+}
+
+.menu.active{
+    display: block;
+    padding-inline-start: 0px;
+}
+
+a.link{
+    padding: 7.5px;
+}
+
+.nav a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+footer {
+    margin: 10 px;
+    color: white;
+    background-color: #0066ff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.headings h1{
+    font-size: 3rem;
+}
+
+.header img{
+    width: 120px;
+    height: auto;
+}
+
+/*Lesson05*/
+
+.stock1{
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    height: auto;
+}
+
+.stock2{
+    margin: 10px;
+    float: right;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.fillertext{
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexburg Weather Service</title>
+    <meta name="description" content="This will be the main preston town page"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+    <link rel="stylesheet" href="css/large.css"/>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/logo.png" alt="Preston logo">
+        </picture>
+        <section class="headings">
+            <h1>Rexburg Weather Service</h1>
+            <div class="motto">Your hometown away from home.</div>
+        </section>
+    </header>
+
+    <div class="nav">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="menu">
+            <li><a href="#home" class="link">Home</a></li>
+            <li><a href="#preston" class="link">Preston</a></li>
+            <li><a href="#sodaSprings" class="link">Soda Springs</a></li>
+            <li><a href="#fishHaven" class="link">Fish Haven</a></li>
+            <li><a href="#stormCenter" class="link">Storm Center</a></li>
+            <li><a href="#gallery" class="link">Gallery</a></li>
+        </ul>
+    </div>
+    <main>
+        <div>
+            <h2>Preston Idaho</h2>
+                    <img class="stock1" src="images/stock1.jpg" alt="Stock Photo 1">
+                    <div class="weather">
+                        <h3>5 Day Forcast</h3>
+                        <table class="table">
+                            <tr class="days">
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                            </tr>
+                            <tr>
+                                <td><img class="sunny" src="images/sunny.png" alt="Sunny Thumbnail"><span>70&#176;F</span></td>
+                                <td><img class="sunny" src="images/sunny.png" alt="Sunny Thumbnail"><span>77&#176;F</span></td>
+                                <td><img class="sunny" src="images/sunny.png" alt="Sunny Thumbnail"><span>82&#176;F</span></td>
+                                <td><img class="rainy" src="images/rainy.png" alt="Sunny Thumbnail"><span>40&#176;F</span></td>
+                                <td><img class="rainy" src="images/rainy.png" alt="Sunny Thumbnail"><span>43&#176;F</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="background">
+                    <h3>Summer Parade</h3>
+                    <img class="stock2" src="images/stock2.jpg" alt="Stock Photo 2">
+                <div class="fillerText">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Morbi at mi tempus, 
+                    suscipit elit sed, 
+                    vulputate elit. Vestibulum quis dui a lorem blandit viverra. 
+                    Quisque sodales nisl nec felis faucibus feugiat. 
+                    Donec rutrum metus at gravida fringilla. 
+                    Pellentesque non euismod neque. 
+                    Sed porttitor suscipit mattis. 
+                    Quisque laoreet magna non nisl auctor laoreet. 
+                    Nulla dignissim diam vel felis dictum pharetra. 
+                    Vestibulum ac velit a orci elementum vestibulum at ut nisl. 
+                    Proin imperdiet, leo scelerisque condimentum maximus, 
+                    metus diam consequat lectus, 
+                    vel consectetur lectus ex sit amet metus. 
+                    Ut ut turpis et mi sagittis lobortis non eget felis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <p class="contact-info"><b>Rexburg Weather Service</b>
+            &#9755;	232 S 7th W
+            Rexburg, ID 83440
+            &#9742; 777-777-7777
+            &#9778; www.rexburgws.com</p>
+            <img class="map" src="images/map.png" alt="Rexburg Map">
+        </div>
+    </main>
+    <footer>
+        <div>&copy; Rexburg Weather Service | Attributions | Jeremy Knudsen |&nbsp;</div> 
+        <div class="current">
+            <span id="currentDayofWeek"></span>, &nbsp;
+            <span id="currentDay"></span> &nbsp; <span id="currentMonth"></span> &nbsp;  
+            <span id="currentYear"></span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@media only screen and (min-width: 32.5em){
+    .menu{
+        display: flex;
+    }
+
+    header img{
+        width: 80px;
+        height: auto;
+    }
+
+    .headings h1{
+        font-size: 2rem;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    /*Lesson05*/
+
+    .stock1{
+        height: 10%;
+    }
+
+    .weather{
+        display: contents;
+    }
+
+    .table{
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    th, td{
+        border: 1px black;
+    }
+
+    .sunny{
+        width: 50px;
+        height: 50px;
+    }
+
+    .rainy{
+        width: 50px;
+        height: 50px;
+    }
+
+    span{
+        display: block;
+    }
+
+    .current{
+        display: block;
+    }
+}
