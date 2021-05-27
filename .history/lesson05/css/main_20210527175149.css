@@ -193,6 +193,7 @@ footer {
 
 .summary{
     display: block;
+    position: relative;
     top: 240px;
     right: 50px;
     background: radial-gradient(#eee, red);

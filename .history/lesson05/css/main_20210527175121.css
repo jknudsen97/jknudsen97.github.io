@@ -151,7 +151,6 @@ footer {
     margin-right: auto;
     max-width: 95%;
     height: auto;
-    position: relative;
 }
 
 .stock2{
@@ -193,6 +192,7 @@ footer {
 
 .summary{
     display: block;
+    position: absolute;
     top: 240px;
     right: 50px;
     background: radial-gradient(#eee, red);
