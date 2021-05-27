@@ -100,4 +100,8 @@
     .current {
         background:yellow;
       }
+
+    .banner{
+        display: contents;
+    }
 }

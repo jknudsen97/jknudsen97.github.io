@@ -74,12 +74,10 @@ for (var i = 0; i < document.links.length; i++) {
 document.links[current].className = 'current';
 
 let thedate = new Date();
-const friday = thedate.getDay();
-const banner = document.querySelector('.banner');
 
-if (thedate.getDay() == 5)
+if (thedate.getDay() == 4)
 {
-  document.querySelector('.banner').style.display = 'block';
+  document.className('#banner').style.display = 'block';
 }
 else
 {

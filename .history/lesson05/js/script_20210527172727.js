@@ -75,11 +75,11 @@ document.links[current].className = 'current';
 
 let thedate = new Date();
 const friday = thedate.getDay();
-const banner = document.querySelector('.banner');
+const banner = document.getElementsByClassName('#banner');
 
-if (thedate.getDay() == 5)
+if (thedate.getDay() == 3)
 {
-  document.querySelector('.banner').style.display = 'block';
+  document.getElementsByClassName('#banner').style.display = 'block';
 }
 else
 {

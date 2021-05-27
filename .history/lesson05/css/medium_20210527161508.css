@@ -66,12 +66,10 @@
     }
 
     .map2{
-        position: static;
+        position: relative;
+        float: left;
         width: 150px;
         height: 150px;
-        margin: 10px;
-        border-style: solid;
-        border-color: black;
     }
 
     .summary{

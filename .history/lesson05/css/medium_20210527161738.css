@@ -63,6 +63,7 @@
 
     .map{
         display: contents;
+        left: 500px;
     }
 
     .map2{
@@ -70,8 +71,6 @@
         width: 150px;
         height: 150px;
         margin: 10px;
-        border-style: solid;
-        border-color: black;
     }
 
     .summary{

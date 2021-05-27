@@ -61,17 +61,11 @@
         flex-direction: row;
     }
 
-    .map{
+    img .map{
         display: contents;
-    }
-
-    .map2{
-        position: static;
-        width: 150px;
-        height: 150px;
-        margin: 10px;
-        border-style: solid;
-        border-color: black;
+        float: left;
+        width: 100px;
+        height: 100px;
     }
 
     .summary{
