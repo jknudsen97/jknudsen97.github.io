@@ -25,11 +25,8 @@
     /*Lesson05*/
 
     .stock1{
+        width: 50%;
         height: 10%;
-    }
-
-    .atock2{
-        float: right;
     }
 
     .weather{
@@ -103,6 +100,6 @@
     }
     
     .current {
-        background:green
+        background:green;
       }
 }

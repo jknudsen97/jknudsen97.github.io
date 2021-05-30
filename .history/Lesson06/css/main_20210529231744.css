@@ -155,10 +155,11 @@ footer {
 }
 
 .stock2{
-    box-shadow: 0 0 30px blue;
+    box-shadow: 10px 10px lightgray;
     margin: 10px;
+    float: right;
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 
 .fillertext{
@@ -206,13 +207,8 @@ footer {
 }
 
 .banner{
-    padding: 10px;
     text-align: center;
     background-color: lightsalmon;
     margin-left: auto;
     margin-right: auto;
-}
-
-h1{
-    font-size:small
 }
