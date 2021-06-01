@@ -32,7 +32,7 @@ p{
 }
 
 .headings h1{
-    font-size: 2em;
+    font-size: 1em;
     margin: 0 0 0 15px;
 }
 
@@ -133,6 +133,10 @@ footer {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+.headings h1{
+    font-size: 3rem;
+}
+
 .header img{
     width: 120px;
     height: auto;
@@ -219,4 +223,8 @@ tr{
     clear: both;
     overflow: hidden;
     white-space: nowrap;
+}
+
+h1{
+    font-size: 10px;
 }

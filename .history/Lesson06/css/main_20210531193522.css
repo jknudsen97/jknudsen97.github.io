@@ -32,7 +32,7 @@ p{
 }
 
 .headings h1{
-    font-size: 2em;
+    font-size: 1em;
     margin: 0 0 0 15px;
 }
 
@@ -131,6 +131,10 @@ footer {
 
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+}
+
+.headings h1{
+    font-size: 3rem;
 }
 
 .header img{
