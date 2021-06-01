@@ -99,8 +99,8 @@
         color: white;
     }
     
-
     .current {
-        background:lightgreen;
+        color: white;
+        background:green;
       }
 }
