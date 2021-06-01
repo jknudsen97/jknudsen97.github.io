@@ -69,6 +69,11 @@ p{
     padding: 0px;
 }
 
+a.link{
+    box-sizing: border-box;
+    border-radius: 20px;;
+}
+
 a.link, a.current{
     padding: 7.5px;
 }
