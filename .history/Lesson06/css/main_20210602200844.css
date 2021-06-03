@@ -187,15 +187,7 @@ footer {
     display: none;
 }
 
-ul{
-    display: grid;
-    grid: auto auto;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-div.summary{
+.summary{
     top: 240px;
     right: 50px;
     background: radial-gradient(#eee, red);

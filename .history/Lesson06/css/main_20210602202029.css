@@ -188,8 +188,6 @@ footer {
 }
 
 ul{
-    display: grid;
-    grid: auto auto;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -203,6 +201,11 @@ div.summary{
     padding: 0.15rem;
     box-shadow: 0 0 30px #333;
     opacity: .9;
+}
+
+div.sum-titles{
+    display: grid;
+    grid-column: auto auto auto;
 }
 
 .s-color{

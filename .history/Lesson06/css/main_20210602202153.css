@@ -189,13 +189,14 @@ footer {
 
 ul{
     display: grid;
-    grid: auto auto;
+    grid: auto auto auto;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
 div.summary{
+    display: flexbox;
     top: 240px;
     right: 50px;
     background: radial-gradient(#eee, red);

@@ -1,0 +1,7 @@
+img{
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
