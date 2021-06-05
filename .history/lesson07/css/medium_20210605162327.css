@@ -1,0 +1,50 @@
+@media only screen and (min-width: 32.5em){
+    .menu{
+        display: flex;
+    }
+
+    header img{
+        width: 80px;
+        height: auto;
+    }
+
+    .headings h1{
+        font-size: 2rem;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    footer{
+        margin: 10px;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /*Lesson07*/
+
+    .nav a:active{
+        background-color: white;
+    }
+
+    .nav a:hover{
+        background-color: green;
+        color: white;
+    }
+    
+    .current {
+        background:lightgreen;
+      }
+
+      .desc{
+          display: none;
+      }
+
+      div.gallery{
+      }
+
+      picture{
+          grid-template-columns: 1fr 1fr;
+      }
+}

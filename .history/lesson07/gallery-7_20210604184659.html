@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexburg Weather Service</title>
+    <meta name="description" content="This will be the main preston town page"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/windchill.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+    <link rel="stylesheet" href="css/large.css"/>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/logo.png" alt="Preston logo">
+        </picture>
+        <section class="headings">
+            <h1>Rexburg Weather Service</h1>
+            <div class="motto">Your hometown away from home.</div>
+        </section>
+    </header>
+
+    <div class="nav">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="menu">
+            <li><a href="#home" class="link">Home</a></li>
+            <li><a href="#preston" class="link">Preston</a></li>
+            <li><a href="#sodaSprings" class="link">Soda Springs</a></li>
+            <li><a href="#fishHaven" class="link">Fish Haven</a></li>
+            <li><a href="#stormCenter" class="link">Storm Center</a></li>
+            <li><a href="#gallery" class="current">Gallery</a></li>
+        </ul>
+    </div>
+    <main>
+        <h1>Gallery</h1>
+    <picture>
+        <img class="gallery"
+            src='images/placeholder.png'
+            data-src="images/kitten.jpg"
+            alt="kitten"
+        />
+    </picture>
+    <picture>
+        <div class="gallery">
+        <img
+            src='images/placeholder.png'
+            data-src="images/nature.jpg"
+            alt="nature"
+        />
+        <div class="desc">Nature</div>
+    </div>
+    </picture>
+    <picture>
+        <div class="gallery">
+        <img
+            src='images/placeholder.png' 
+            data-src="images/ocean.jpeg"
+            alt="ocean"
+        />
+        <div class="desc">Ocean</div>
+        </div>
+    </picture>
+    <picture>
+        <div class="gallery">
+        <img
+            src='images/placeholder.png' 
+            data-src="images/arctic.jpg"
+            alt="arctic"
+        />
+        <div class="desc">Arctic</div>
+        </div>
+    </picture>
+    <picture>
+        <div class="gallery">
+        <img
+            src='images/placeholder.png'
+            data-src="images/puppy.jpg"
+            alt="puppy"
+        />
+        <div class="desc">Puppy</div>
+        </div>
+    </picture>
+    <picture>
+        <div class="gallery">
+        <img 
+            src='images/placeholder.png'
+            data-src="images/lightning.jpg"
+            alt="lightning"
+        />
+        <div class="desc">Lightning</div>
+        </div>
+    </picture>
+    <picture>
+        <div class="gallery">
+        <img
+            src='images/placeholder.png'
+            data-src="images/underwater.jpg"
+            alt="underwater"
+        />
+        <div class="desc">Underwater</div>
+        </div>
+    </picture>
+    <picture>
+        <div class="gallery">
+        <img 
+            src='images/placeholder.png'
+            data-src="images/forest.jpg"
+            alt="forest"
+        />
+    </picture>
+    <div class="desc">Forest</div>
+    </div>
+    <picture>
+        <img 
+            src='images/placeholder.png'
+            data-src="images/clouds.jpg"
+            alt="clouds"
+        />
+    </picture>
+    <div class="desc">Clouds</div>
+    </main>
+    <footer>
+        <div>&copy; Rexburg Weather Service | Attributions | Jeremy Knudsen |&nbsp;</div> 
+        <div class="current2">
+            <span id="currentDayofWeek"></span>, &nbsp;
+            <span id="currentDay"></span> &nbsp; <span id="currentMonth"></span> &nbsp;  
+            <span id="currentYear"></span>
+        </div>
+    </footer>
+</body>
+</html>

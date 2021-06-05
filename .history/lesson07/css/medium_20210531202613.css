@@ -1,0 +1,106 @@
+@media only screen and (min-width: 32.5em){
+    .menu{
+        display: flex;
+    }
+
+    header img{
+        width: 80px;
+        height: auto;
+    }
+
+    .headings h1{
+        font-size: 2rem;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    footer{
+        margin: 10px;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /*Lesson05*/
+
+    .stock1{
+        width: 50%;
+        height: 10%;
+    }
+
+    .weather{
+        display: contents;
+    }
+
+    .table{
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    th, td{
+        border: 1px black;
+    }
+
+    .sunny{
+        width: 50px;
+        height: 50px;
+    }
+
+    .rainy{
+        width: 50px;
+        height: 50px;
+    }
+
+    span{
+        display: block;
+    }
+
+    .current2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .map{
+        display: contents;
+    }
+
+    .map2{
+        position: static;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    .summary{
+        top: 275px;
+        right: 50px;
+        position: absolute;
+    }
+    
+    .sum-titles{
+        position: static;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        height: auto;
+    }
+
+    .nav a:active{
+        background-color: white;
+    }
+
+    .nav a:hover{
+        background-color: green;
+        color: white;
+    }
+    
+
+    .current {
+        background:lightgreen;
+      }
+}
