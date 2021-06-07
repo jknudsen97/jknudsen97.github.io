@@ -193,10 +193,6 @@ ul{
     list-style-type: none;
 }
 
-li{
-    margin: 5px;
-}
-
 div.summary{
     top: 240px;
     right: 50px;
