@@ -53,6 +53,10 @@
         height: 50px;
     }
 
+    span{
+        display: block;
+    }
+
     .current2{
         display: flex;
         flex-direction: row;
