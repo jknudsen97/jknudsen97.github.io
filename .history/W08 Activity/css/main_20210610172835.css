@@ -29,10 +29,6 @@ tr:nth-child(even){
     background-color: #e7ffed;
   }
 
-  table tbody tr:nth-child(6) td:first-child {
-    font-style: italic;
-  }
-
   tr.unique{
       font-weight: bold;
   }
