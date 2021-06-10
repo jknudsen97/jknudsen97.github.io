@@ -1,0 +1,24 @@
+thead{
+    background-color: #e7f0ed;
+}
+
+tfoot{
+    background-color: #7fb9c2;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+tr:nth-child(2n){
+    background-color: #e7f0ed;
+  }
+
+  tr.unique{
+      font-weight: bold;
+  }
+
+  .unique{
+      color: white;
+      background-color: #628ca6;
+  }

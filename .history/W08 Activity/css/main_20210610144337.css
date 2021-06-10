@@ -1,0 +1,38 @@
+thead{
+    text-align: center;
+    font-weight: bold;
+    background-color: #7fb9c2;
+}
+
+tfoot{
+    background-color: #7fb9c2;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+tr:nth-child(even){
+    background-color: #e7f0ed;
+  }
+
+  tr:nth-child(3){
+    background-color: #e7ffed;
+  }
+
+  tr:nth-child(5){
+    background-color: #e7ffed;
+  }
+
+  tr:nth-child(7){
+    background-color: #e7ffed;
+  }
+
+  tr.unique{
+      font-weight: bold;
+  }
+
+  .unique{
+      color: white;
+      background-color: #628ca6;
+  }

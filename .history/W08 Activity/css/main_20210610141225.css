@@ -1,0 +1,13 @@
+thead{
+    display: block;
+    text-align: center;
+    background-color: #e7f0ed;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+tr:nth-child(2n){
+    background-color: #e7f0ed;
+  }
