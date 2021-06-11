@@ -86,11 +86,11 @@ if ('IntersectionObserver' in window) {
 }
 
 //Last visited in days.
-let date_diff = function(date1, date2) {
-    var local = window.localStorage.setItem("dt1", dt1);
+var date_diff = function(date1, date2) {
     dt1 = new Date(date1);
     dt2 = new Date(date2);
-    date_diff = Math.floor((Date.UTC(dt2.now()) - Date.UTC(dt1.getDate()) / (1000 * 60 * 60 * 24)));
+    var local = window.localStorage.setItem("dt1");
+    return Math.floor((Date.UTC(dt2.now()) - Date.UTC(dt1.getDate()) /(1000 * 60 * 60 * 24)));
 }
 
-document.querySelector("#visited").textContent = date_diff;
+let date_diff = document.querySelector('#visited').innerHTML;
