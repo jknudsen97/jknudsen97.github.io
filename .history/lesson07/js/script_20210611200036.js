@@ -66,24 +66,7 @@ const imgOptions = {
     threshold: 1
 };
 
-if ('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver(items => {
-        items.forEach(item => {
-            if (item.isIntersecting) {
-                loadImages(item.target);
-                imgObserver.unobserve(item.target);
-            }
-        });
-    }, imgOptions);
 
-    imagesToLoad.forEach((img) => {
-        imgObserver.observe(img);
-    });
-} else {
-    imagesToLoad.forEach(img => {
-        loadImages(img);
-    });
-}
 
 //Last visited in days.
 window.onload = function(date1, date2) {

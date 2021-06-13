@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center Page</title>
+    <meta name="description" content="This will be storm center page"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+    <link rel="stylesheet" href="css/large.css"/>
+</head>
+<body>
+    <header>
+            <img src="images/logo.png" alt="Preston logo">
+        <section class="headings">
+            <h1>Rexburg Weather Service</h1>
+            <div class="motto">Your hometown away from home.</div>
+        </section>
+    </header>
+
+    <div class="nav">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="menu">
+            <li><a href="#home" class="link">Home</a></li>
+            <li><a href="#preston" class="link">Preston</a></li>
+            <li><a href="#sodaSprings" class="link">Soda Springs</a></li>
+            <li><a href="#fishHaven" class="link">Fish Haven</a></li>
+            <li><a href="#stormCenter" class="current">Storm Center</a></li>
+            <li><a href="#gallery" class="link">Gallery</a></li>
+        </ul>
+    </div>
+    <main>
+        <form action="/action_page.php" method="get">
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="tel" name="tel"><br>
+            <label for="zip">Zip Code:</label><br>
+            <input type="number" id="number" name="number"><br>
+            <label for="date">Storm Date:</label><br>
+            <input type="date" id="date" name="date"><br>
+            
+            <label for="storms">Storm Type:</label><br>
+            <input list="storms" name="storm" id="storm">
+            <datalist id="storms">
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+            </datalist>
+
+        </form>
+    </main>
+    <footer>
+        <div>&copy; Rexburg Weather Service | Attributions | Jeremy Knudsen |&nbsp;</div> 
+        <div class="current2">
+            <span id="currentDayofWeek"></span>, &nbsp;
+            <span id="currentDay"></span> &nbsp; <span id="currentMonth"></span> &nbsp;  
+            <span id="currentYear"></span>
+        </div>
+    </footer>
+</body>
+</html>
