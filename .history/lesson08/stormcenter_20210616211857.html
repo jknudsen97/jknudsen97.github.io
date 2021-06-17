@@ -43,18 +43,18 @@
     <main>
         <form action="thanks.html">
             <label for="fname">Full Name:</label><br>
-            <input type="text" id="fname" name="fname" pattern="[A-Za-z].{5,}" required><br>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z].{5,}"><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" placeholder="johndoe@gmail.com"><br>
             <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="tel"><br>
+            <input type="tel" id="tel" name="tel"><br>
             <label for="zip">Zip Code:</label><br>
-            <input type="number" id="zip" name="number"><br>
+            <input type="number" id="number" name="number"><br>
             <label for="date">Storm Date:</label><br>
             <input type="date" id="date" name="date"><br>
             
             <label for="storms">Storm Type:</label><br>
-            <input list="storms" name="storm" id="storms">
+            <input list="storms" name="storm" id="storm">
             <datalist id="storms">
               <option value="Flash Flood">
               <option value="Hail">
@@ -89,9 +89,11 @@
             </div>
 
             <label for="comments">Comments:</label><br>
-            <textarea name="comment" id="comments" rows="4" cols="25"></textarea><br>
+            <textarea name="comment" id="comment" rows="4" cols="25"></textarea><br>
 
-            <input type="submit" value="submit">
+            <a href="thanks.html">
+                <input type="submit" value="submit">
+            </a>
         </form>
     </main>
     <footer>
