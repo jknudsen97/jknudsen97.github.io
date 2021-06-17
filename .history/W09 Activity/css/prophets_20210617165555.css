@@ -1,0 +1,25 @@
+.cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+h1{
+    text-align: center;
+}
+
+footer{
+    margin: 10px;
+    padding: 10px;
+    border-top: 1px dotted black;
+    text-align: center;
+}
+
+main section{
+    margin: 20px;
+}
+
+section img{
+    width: 150px;
+    height: auto;
+}
