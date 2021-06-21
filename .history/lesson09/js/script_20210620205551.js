@@ -50,26 +50,3 @@ document.querySelector("#currentMonth").innerHTML = n;
 
 var n = d.getFullYear();
 document.querySelector("#currentYear").innerHTML = n;
-
-//JSON
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const towns = jsonObject['towns'];
-    for (let i = 0; i < towns.length; i++ ) {
-        let places = document.createElement('section');
-        let section = document.createElement('section');
-        section.textContent = towns[i].name + ' ' + towns[i].motto + ' ' + towns[i].yearFounded + ' ' + towns[i].currentPopulation + ' ' + towns[i].averageRainfall;
-
-        section.setAttribute('alt', '${towns[i].name} ${towns[i].motto} Year Founded: ${towns[i].yearFounded} Population: ${towns[i].currentPopulation} Annual Rain Fall: ${towns[i].averageRainfall}')
-
-        places.append(section);
-
-        document.querySelector('div.places').appendChild(places);
-    }
-  });

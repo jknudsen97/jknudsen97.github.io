@@ -7,11 +7,4 @@
         width: 100%;
         transition: 0.3s;
     }
-
-    /*Lesson09*/
-    article {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: 1fr;
-      }
 }

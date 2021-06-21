@@ -161,7 +161,7 @@ input{
 }
 
 article {
-    justify-content: center;
+    text-align: center;
     display: grid;
       grid-template-columns: 1fr;
   }

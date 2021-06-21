@@ -36,19 +36,4 @@
     .current {
         background:lightgreen;
       }
-
-    /*Lesson 09*/
-    article {
-        display: grid;
-          grid-template-columns: 1fr 1fr;
-      }
-      
-      article:nth-child(odd) img {
-          grid-column: 2;
-      }
-      
-      article:nth-child(odd) .data {
-          grid-column: 1;
-          grid-row: 1;
-      }
 }

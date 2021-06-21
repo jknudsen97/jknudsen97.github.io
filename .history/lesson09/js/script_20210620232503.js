@@ -66,7 +66,7 @@ fetch(requestURL)
         let section = document.createElement('section');
         section.textContent = towns[i].name + ' ' + towns[i].motto + ' ' + towns[i].yearFounded + ' ' + towns[i].currentPopulation + ' ' + towns[i].averageRainfall;
 
-        section.setAttribute('alt', '${towns[i].name} ${towns[i].motto} Year Founded: ${towns[i].yearFounded} Population: ${towns[i].currentPopulation} Annual Rain Fall: ${towns[i].averageRainfall}')
+        p.setAttribute('alt', '${towns[i].name} ${towns[i].motto} Year Founded: ${towns[i].yearFounded} Population: ${towns[i].currentPopulation} Annual Rain Fall: ${towns[i].averageRainfall}')
 
         places.append(section);
 

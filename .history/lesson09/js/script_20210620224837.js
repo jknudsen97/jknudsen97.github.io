@@ -61,14 +61,17 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const towns = jsonObject['towns'];
-    for (let i = 0; i < towns.length; i++ ) {
+    for (let i = 0; i < prophets.length; i++ ) {
         let places = document.createElement('section');
-        let section = document.createElement('section');
-        section.textContent = towns[i].name + ' ' + towns[i].motto + ' ' + towns[i].yearFounded + ' ' + towns[i].currentPopulation + ' ' + towns[i].averageRainfall;
+        let p = document.createElement('p');
+        p.textContent = towns[i].name + ' ' + towns[i].motto + ' ' + towns[i].yearFounded + ' ' + towns[i].currentPopulation + ' ' + towns[i].averageRainfall;
 
-        section.setAttribute('alt', '${towns[i].name} ${towns[i].motto} Year Founded: ${towns[i].yearFounded} Population: ${towns[i].currentPopulation} Annual Rain Fall: ${towns[i].averageRainfall}')
+        //let img = document.createElement('img');
+        //img.setAttribute('src', prophets[i].imageurl);
+        //img.setAttribute('alt', 'Portraits of ${prophets[i].name} ${prophets[i].lastname}');
 
-        places.append(section);
+        places.append(p);
+        //card.append(img);
 
         document.querySelector('div.places').appendChild(places);
     }
