@@ -58,34 +58,33 @@ fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
-
+  
   .then(function (jsonObject) {
-    const towns = jsonObject["towns"];
-    const idaho = towns.filter(
-      towns => towns.name == "Preston" || towns.name == "Soda Springs" || towns.name == "Fish Haven");
+    const town = jsonObject["towns"];
+    const idaho = town.filter(
+      (town) => town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven");
 
       idaho.forEach((town) => {
         let card = document.createElement("section");
-        let name = document.createElement("h1");
-        let motto = document.createElement("h2");
+        let name = document.createElement("h2");
+        let motto = document.createElement("h3");
         let yearfounded = document.createElement("p");
         let population = document.createElement("p");
         let rainfall = document.createElement("p");
 
-        name.textContent = '${towns.name}';
-        console.log(towns);
+        name.textContent = '${town.name}';
         motto.textContent = '${town.motto}';
         yearfounded.textContent = 'Founded: ${town.yearFounded}';
         population.textContent = 'Population: ${town.currentPopulation}';
         rainfall.textContent = 'Annual Rainfall: ${town.averageRainfall}';
 
-        card.appendChild(name);
-        card.appendChild(motto);
-        card.appendChild(yearfounded);
-        card.appendChild(population);
-        card.appendChild(rainfall);
+        text.appendChild(name);
+        text.appendChild(motto);
+        text.appendChild(yearfounded);
+        text.appendChild(population);
+        text.appendChild(rainfall);
         
         document.querySelector("article.town_section").appendChild(card);
       })
     }
-  )
+  })

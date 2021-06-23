@@ -62,7 +62,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const towns = jsonObject["towns"];
     const idaho = towns.filter(
-      towns => towns.name == "Preston" || towns.name == "Soda Springs" || towns.name == "Fish Haven");
+      (towns) => towns.name == "Preston" || towns.name == "Soda Springs" || towns.name == "Fish Haven");
 
       idaho.forEach((town) => {
         let card = document.createElement("section");

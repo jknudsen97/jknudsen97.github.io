@@ -58,34 +58,18 @@ fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
-
   .then(function (jsonObject) {
-    const towns = jsonObject["towns"];
-    const idaho = towns.filter(
-      towns => towns.name == "Preston" || towns.name == "Soda Springs" || towns.name == "Fish Haven");
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const towns = jsonObject['towns'];
+    for (let i = 0; i < towns.length; i++ ) {
+        let places = document.createElement('section');
+        let section = document.createElement('section');
+        section.textContent = towns[i].name + ' ' + towns[i].motto + ' ' + towns[i].yearFounded + ' ' + towns[i].currentPopulation + ' ' + towns[i].averageRainfall;
 
-      idaho.forEach((town) => {
-        let card = document.createElement("section");
-        let name = document.createElement("h1");
-        let motto = document.createElement("h2");
-        let yearfounded = document.createElement("p");
-        let population = document.createElement("p");
-        let rainfall = document.createElement("p");
+        section.setAttribute('alt', '${towns[i].name} ${towns[i].motto} Year Founded: ${towns[i].yearFounded} Population: ${towns[i].currentPopulation} Annual Rain Fall: ${towns[i].averageRainfall}')
 
-        name.textContent = '${towns.name}';
-        console.log(towns);
-        motto.textContent = '${town.motto}';
-        yearfounded.textContent = 'Founded: ${town.yearFounded}';
-        population.textContent = 'Population: ${town.currentPopulation}';
-        rainfall.textContent = 'Annual Rainfall: ${town.averageRainfall}';
+        places.append(section);
 
-        card.appendChild(name);
-        card.appendChild(motto);
-        card.appendChild(yearfounded);
-        card.appendChild(population);
-        card.appendChild(rainfall);
-        
-        document.querySelector("article.town_section").appendChild(card);
-      })
+        document.querySelector('div.places').appendChild(places);
     }
-  )
+  });

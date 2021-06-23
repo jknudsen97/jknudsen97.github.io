@@ -72,10 +72,10 @@ fetch(requestURL)
         let population = document.createElement("p");
         let rainfall = document.createElement("p");
 
-        name.textContent = '${towns.name}';
+        name.textContent = '{towns.name}';
         console.log(towns);
-        motto.textContent = '${town.motto}';
-        yearfounded.textContent = 'Founded: ${town.yearFounded}';
+        motto.textContent = '{town.motto}';
+        yearfounded.textContent = 'Founded: {town.yearFounded}';
         population.textContent = 'Population: ${town.currentPopulation}';
         rainfall.textContent = 'Annual Rainfall: ${town.averageRainfall}';
 

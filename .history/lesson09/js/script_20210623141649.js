@@ -60,9 +60,9 @@ fetch(requestURL)
   })
 
   .then(function (jsonObject) {
-    const towns = jsonObject["towns"];
-    const idaho = towns.filter(
-      towns => towns.name == "Preston" || towns.name == "Soda Springs" || towns.name == "Fish Haven");
+    const town = jsonObject["towns"];
+    const idaho = town.filter(
+      (town) => town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven");
 
       idaho.forEach((town) => {
         let card = document.createElement("section");
@@ -72,8 +72,8 @@ fetch(requestURL)
         let population = document.createElement("p");
         let rainfall = document.createElement("p");
 
-        name.textContent = '${towns.name}';
-        console.log(towns);
+        name.textContent = '${town.name}';
+        console.log(town);
         motto.textContent = '${town.motto}';
         yearfounded.textContent = 'Founded: ${town.yearFounded}';
         population.textContent = 'Population: ${town.currentPopulation}';
