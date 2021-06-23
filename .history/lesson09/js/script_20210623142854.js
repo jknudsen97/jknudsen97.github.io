@@ -66,20 +66,18 @@ fetch(requestURL)
 
       idaho.forEach((towns) => {
         let card = document.createElement("section");
-        let insidecard = document.createElement('section');
         let name = document.createElement("h1");
         let motto = document.createElement("h2");
         let yearfounded = document.createElement("p");
         let population = document.createElement("p");
         let rainfall = document.createElement("p");
-        let img = document.createElement("img");
 
         name.textContent = `${towns.name}`;
-        motto.textContent = `${towns.motto}`;
-        yearfounded.textContent = `Founded: ${towns.yearFounded}`;
-        population.textContent = `Population: ${towns.currentPopulation}`;
-        rainfall.textContent = `Annual Rainfall: ${towns.averageRainfall}`;
-        img.setAttribute =('src', images/clouds.jpg);
+        console.log(towns);
+        motto.textContent = '${town.motto}';
+        yearfounded.textContent = 'Founded: ${town.yearFounded}';
+        population.textContent = 'Population: ${town.currentPopulation}';
+        rainfall.textContent = 'Annual Rainfall: ${town.averageRainfall}';
 
         card.appendChild(name);
         card.appendChild(motto);
@@ -87,7 +85,7 @@ fetch(requestURL)
         card.appendChild(population);
         card.appendChild(rainfall);
         
-        document.querySelector("section.town_section").appendChild(card);
+        document.querySelector("article.town_section").appendChild(card);
       })
     }
   )
