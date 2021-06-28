@@ -1,6 +1,6 @@
 let cityID = '5604473';
 let appid = '4288c843ab0418aa9169c7a83367910c';
-const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&appid=${appid}&units=imperial`;
+const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&appid=${appid}&units=imperial&units=round`;
 
 fetch(apiURL)
 .then((response) => response.json())
@@ -20,7 +20,7 @@ fetch(apiURL)
         let d = x.dt_txt;
         console.log(d);
         document.getElementById(`dayofweek${day + 1}`).textContent = dayofWeek[day + 1];
-        document.getElementById(`forecast${day + 1}`).textContent = Math.round(x.main.temp);
+        document.getElementById(`forecast${day + 1}`).textContent = x.main.temp;
         day++
     })
 })

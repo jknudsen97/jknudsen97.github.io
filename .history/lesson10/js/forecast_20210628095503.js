@@ -20,7 +20,7 @@ fetch(apiURL)
         let d = x.dt_txt;
         console.log(d);
         document.getElementById(`dayofweek${day + 1}`).textContent = dayofWeek[day + 1];
-        document.getElementById(`forecast${day + 1}`).textContent = Math.round(x.main.temp);
+        document.getElementById(`forecast${day + 1}`).textContent = x.main.temp;
         day++
     })
 })
