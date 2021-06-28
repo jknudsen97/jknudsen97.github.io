@@ -11,7 +11,6 @@ fetch(apiurl)
     const currently = document.querySelector('#current');
     const desc = jsObject.weather[0].description;
     currently.innerHTML = desc;
-    console.log(desc);
 
     const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     document.getElementById('imagesrc').textContent = imagesrc;
