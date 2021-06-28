@@ -1,8 +1,8 @@
 let cityid = '5604473';
 let appID = '4288c843ab0418aa9169c7a83367910c';
-const apiurl = `https://api.openweathermap.org/data/2.5/weather?id=${cityid}&appid=${appID}&units=imperial`;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityid}&appid=${appID}`;
 
-fetch(apiurl)
+fetch(apiURL)
 .then((response) => response.json())
 .then((jsObject) => {
     const temperature = document.querySelector('#temp');
