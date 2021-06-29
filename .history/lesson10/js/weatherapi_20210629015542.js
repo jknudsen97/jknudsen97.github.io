@@ -5,6 +5,8 @@ const apiurl = `https://api.openweathermap.org/data/2.5/weather?id=${cityid}&app
 fetch(apiurl)
 .then((response) => response.json())
 .then((jsObject) => {
+    const type = document.querySelector('#type');
+    type.textContent = jsObject.weather.main.toFixed(0);
     const temperature = document.querySelector('#temp');
     temperature.textContent = jsObject.main.temp.toFixed(0);
     console.log(jsObject.main.temp.toFixed(0));
@@ -13,7 +15,7 @@ fetch(apiurl)
     const humidity = document.querySelector('#humidity');
     humidity.textContent = jsObject.main.humidity.toFixed(0);
     const speed = document.querySelector('#speed');
-    speed.textContent = jsObject.wind.speed.toFixed(0);
+    speed.textContent = jsObject.main.wind.speed.toFixed(0);
     const desc = jsObject.weather[0].description;
     currently.innerHTML = desc;
     console.log(desc);

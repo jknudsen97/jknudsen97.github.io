@@ -5,6 +5,8 @@ const apiurl = `https://api.openweathermap.org/data/2.5/weather?id=${cityid}&app
 fetch(apiurl)
 .then((response) => response.json())
 .then((jsObject) => {
+    const type = document.querySelector('#type');
+    type.textContent = jsObject.weather.main.toFixed(0);
     const temperature = document.querySelector('#temp');
     temperature.textContent = jsObject.main.temp.toFixed(0);
     console.log(jsObject.main.temp.toFixed(0));
