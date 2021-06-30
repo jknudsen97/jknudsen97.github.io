@@ -15,9 +15,8 @@ fetch(apiurl)
     const speed = document.querySelector('#speed');
     speed.textContent = jsObject.wind.speed.toFixed(0);
     const desc = jsObject.weather[0].description;
-    currently.innerHTML = desc;
-    console.log(desc);
-
+    //currently.innerHTML = desc;
+    
     const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     document.getElementById('imagesrc').textContent = imagesrc;
     document.getElementById('icon').setAttribute('src', imagesrc);

@@ -5,8 +5,8 @@ const apiurl = `https://api.openweathermap.org/data/2.5/weather?id=${cityid}&app
 fetch(apiurl)
 .then((response) => response.json())
 .then((jsObject) => {
-    const temp = document.querySelector('#temp');
-    temp.textContent = jsObject.main.temp.toFixed(0);
+    const temperature = document.querySelector('#temp');
+    temperature.textContent = jsObject.main.temp.toFixed(0);
     console.log(jsObject.main.temp.toFixed(0));
     const high = document.querySelector('#high');
     high.textContent = jsObject.main.temp_max.toFixed(0);
@@ -24,9 +24,12 @@ fetch(apiurl)
     document.getElementById('icon').setAttribute('alt', desc.toUpperCase());
 });
 
-function windChill(temp, speed)
+/*let temp = document.querySelector('#temp').innerHTML;
+let speed = document.querySelector('#speed').innerHTML;
+
+function windChill(t, s)
 {
-    let wChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temp) * (Math.pow(speed, 0.16));
+    let wChill = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t) * (Math.pow(s, 0.16));
     return Math.round(wChill);
 }
 
@@ -40,4 +43,4 @@ else
 {
     let wc = "N/A";
     document.querySelector("#WC").textContent = wc;
-}
+}*/
