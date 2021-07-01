@@ -80,8 +80,8 @@ fetch(requestURL)
         yearfounded.textContent = `Founded: ${towns.yearFounded}`;
         population.textContent = `Population: ${towns.currentPopulation}`;
         rainfall.textContent = `Annual Rainfall: ${towns.averageRainfall}in`;
-        img.setAttribute =('src', `images/${towns.photo}`);
-        img.setAttribute('alt', `${towns.name} img`);
+        img.setAttribute =('src', `images/${town.photo}`);
+        img.setAttribute('alt', `${town.name} img`);
 
         card.appendChild(name);
         card.appendChild(motto);
