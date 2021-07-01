@@ -88,8 +88,8 @@ fetch(requestURL)
         insidecard.appendChild(yearfounded);
         insidecard.appendChild(population);
         insidecard.appendChild(rainfall);
-        insidecard.appendChild(text);
         card.appendChild(image);
+        insidecard.appendChild(text);
         card.appendChild(insidecard);
         
         document.querySelector("#places").appendChild(card);

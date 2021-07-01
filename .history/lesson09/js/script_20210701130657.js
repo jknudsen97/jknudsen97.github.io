@@ -80,19 +80,18 @@ fetch(requestURL)
         yearfounded.textContent = `Founded: ${towns.yearFounded}`;
         population.textContent = `Population: ${towns.currentPopulation}`;
         rainfall.textContent = `Annual Rainfall: ${towns.averageRainfall}in`;
-        image.setAttribute('src', `images/${towns.photo}`);
+        image.setAttribute =('src', `images/${towns.photo}`);
         image.setAttribute('alt', `${towns.name} img`);
 
-        insidecard.appendChild(name);
-        insidecard.appendChild(motto);
-        insidecard.appendChild(yearfounded);
-        insidecard.appendChild(population);
-        insidecard.appendChild(rainfall);
-        insidecard.appendChild(text);
-        card.appendChild(image);
-        card.appendChild(insidecard);
+        card.appendChild(name);
+        card.appendChild(motto);
+        card.appendChild(yearfounded);
+        card.appendChild(population);
+        card.appendChild(rainfall);
+        card.appendChild(img);
+        card.appendChild(text);
         
-        document.querySelector("#places").appendChild(card);
+        document.querySelector("section.town_section").appendChild(card);
       })
     }
   )

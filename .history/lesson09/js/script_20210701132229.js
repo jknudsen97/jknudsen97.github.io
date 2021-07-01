@@ -83,13 +83,13 @@ fetch(requestURL)
         image.setAttribute('src', `images/${towns.photo}`);
         image.setAttribute('alt', `${towns.name} img`);
 
-        insidecard.appendChild(name);
-        insidecard.appendChild(motto);
-        insidecard.appendChild(yearfounded);
-        insidecard.appendChild(population);
-        insidecard.appendChild(rainfall);
-        insidecard.appendChild(text);
+        card.appendChild(name);
+        card.appendChild(motto);
+        card.appendChild(yearfounded);
+        card.appendChild(population);
+        card.appendChild(rainfall);
         card.appendChild(image);
+        card.appendChild(text);
         card.appendChild(insidecard);
         
         document.querySelector("#places").appendChild(card);
