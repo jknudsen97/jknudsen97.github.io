@@ -9,8 +9,8 @@
     }
 
     /*Lesson09*/
-    article {
+    .places {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
       }
 }

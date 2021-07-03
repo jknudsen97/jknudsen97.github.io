@@ -38,16 +38,16 @@
       }
 
     /*Lesson 09*/
-    article {
+    div.places {
         display: grid;
           grid-template-columns: 1fr 1fr;
       }
       
-      article:nth-child(odd) img {
+      div.places:nth-child(odd) img {
           grid-column: 2;
       }
       
-      article:nth-child(odd) .data {
+      div.places:nth-child(odd) .data {
           grid-column: 1;
           grid-row: 1;
       }

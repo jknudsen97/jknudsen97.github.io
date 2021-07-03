@@ -139,39 +139,20 @@ footer {
     height: auto;
 }
 
-/*Lesson08*/
-form{
-    background-color: bisque;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-input{
-    padding: 10px;
-    margin: 10px;
-}
-
 /*Lesson09*/
-article img{
+.places img{
     max-width: 200px;
     height: auto;
     padding: 2px;
-    margin: 10px;
     border-style: solid;
 }
 
-article {
-    max-width: 700px;
-    margin: .5rem auto;
-    background-color: lightblue;
+div.places {
     justify-content: center;
     display: grid;
       grid-template-columns: 1fr;
   }
 
-  .extra{
-      background-color: lightsalmon;
-      padding: 5px;
-      max-width: 700px;
-      margin: .5rem auto;
+  img{
+      padding: 10px;
   }

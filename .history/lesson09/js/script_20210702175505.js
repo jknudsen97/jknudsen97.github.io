@@ -65,8 +65,8 @@ fetch(requestURL)
       towns => towns.name == "Preston" || towns.name == "Soda Springs" || towns.name == "Fish Haven");
 
       idaho.forEach((towns) => {
-        let card = document.createElement("article");
-        let insidecard = document.createElement('section');
+        let card = document.createElement("section");
+        let insidecard = document.createElement('article');
         let name = document.createElement("h1");
         let motto = document.createElement("h2");
         let yearfounded = document.createElement("p");

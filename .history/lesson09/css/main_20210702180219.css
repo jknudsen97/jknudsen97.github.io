@@ -152,7 +152,7 @@ input{
 }
 
 /*Lesson09*/
-article img{
+.places img{
     max-width: 200px;
     height: auto;
     padding: 2px;
@@ -160,18 +160,12 @@ article img{
     border-style: solid;
 }
 
-article {
-    max-width: 700px;
-    margin: .5rem auto;
-    background-color: lightblue;
+.places {
     justify-content: center;
     display: grid;
       grid-template-columns: 1fr;
   }
 
-  .extra{
-      background-color: lightsalmon;
-      padding: 5px;
-      max-width: 700px;
-      margin: .5rem auto;
+  img{
+      padding: 10px;
   }

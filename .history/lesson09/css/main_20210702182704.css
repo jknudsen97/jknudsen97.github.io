@@ -152,6 +152,10 @@ input{
 }
 
 /*Lesson09*/
+.towns.h1{
+    color: white;
+}
+
 article img{
     max-width: 200px;
     height: auto;
@@ -163,15 +167,8 @@ article img{
 article {
     max-width: 700px;
     margin: .5rem auto;
-    background-color: lightblue;
+    background-color: #445d8c;
     justify-content: center;
     display: grid;
       grid-template-columns: 1fr;
-  }
-
-  .extra{
-      background-color: lightsalmon;
-      padding: 5px;
-      max-width: 700px;
-      margin: .5rem auto;
   }

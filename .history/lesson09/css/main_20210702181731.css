@@ -161,17 +161,10 @@ article img{
 }
 
 article {
-    max-width: 700px;
-    margin: .5rem auto;
-    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+    background-color: #445d8c;
     justify-content: center;
     display: grid;
       grid-template-columns: 1fr;
-  }
-
-  .extra{
-      background-color: lightsalmon;
-      padding: 5px;
-      max-width: 700px;
-      margin: .5rem auto;
   }
