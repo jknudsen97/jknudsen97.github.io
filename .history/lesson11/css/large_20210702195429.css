@@ -1,0 +1,33 @@
+@media only screen and (min-width: 60em){
+    .menu{
+        display: flex;
+        top: 5rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .stock1{
+        width: 90%;
+    }
+
+    /*Lesson07*/
+    div.gallery:hover{
+        box-shadow: 0 0 30px #333;
+    }
+
+    .desc{
+        display: contents;
+    }
+
+    div.overall-gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*Lesson09*/
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+}

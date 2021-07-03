@@ -1,3 +1,4 @@
+/*Heading & Navbar*/
 header {
     background-color: #0066ff;
     padding: 5px;
@@ -80,8 +81,7 @@ p{
 }
 
 a.link, a.current{
-    padding: 5px;
-    margin: 5px;
+    padding: 7.5px;
 }
 
 .nav a.icon{
@@ -139,6 +139,104 @@ footer {
     height: auto;
 }
 
+/*Lesson05*/
+
+.stock1{
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    height: auto;
+    position: relative;
+}
+
+.stock2{
+    box-shadow: 10px 10px lightgray;
+    margin: 10px;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.fillertext{
+    padding: 15px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.background{
+    justify-content: center;
+    display: block;
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+}
+
+.weather{
+    display: none;
+}
+
+.contact-info{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.map{
+    display: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li{
+    margin: 5px;
+}
+
+div.summary{
+    top: 240px;
+    right: 50px;
+    background: radial-gradient(#eee, red);
+    border: 1px solid #000;
+    padding: 0.15rem;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+    margin: 5px;
+}
+
+.s-color{
+    color: white;
+}
+
+.banner{
+    text-align: center;
+    background-color: lightsalmon;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+tr{
+    padding: 5px;
+    clear: both;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sum-titles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /*Lesson07*/
 
 img[data-src]{
@@ -174,3 +272,41 @@ div.overall-gallery{
     display: grid;
     grid-template-columns: 1fr;
 }
+
+/*Lesson08*/
+form{
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Lesson09*/
+article img{
+    max-width: 200px;
+    height: auto;
+    padding: 2px;
+    margin: 10px;
+    border-style: solid;
+}
+
+article {
+    max-width: 700px;
+    margin: .5rem auto;
+    background-color: lightblue;
+    justify-content: center;
+    display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .extra{
+      background-color: lightsalmon;
+      padding: 5px;
+      max-width: 700px;
+      margin: .5rem auto;
+  }
+

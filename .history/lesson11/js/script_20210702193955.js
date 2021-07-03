@@ -51,6 +51,9 @@ document.querySelector("#currentMonth").innerHTML = n;
 var n = d.getFullYear();
 document.querySelector("#currentYear").innerHTML = n;
 
+function adjustSeverity(severity) {
+  document.getElementById("severityvalue").innerHTML = severity;
+
 //JSON
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -74,14 +77,12 @@ fetch(requestURL)
         let rainfall = document.createElement("p");
         let image = document.createElement("img");
         let text = document.createElement("div");
-        let events = document.createElement("div");
 
         name.textContent = `${towns.name}`;
         motto.textContent = `${towns.motto}`;
         yearfounded.textContent = `Founded: ${towns.yearFounded}`;
         population.textContent = `Population: ${towns.currentPopulation}`;
         rainfall.textContent = `Annual Rainfall: ${towns.averageRainfall}in`;
-        events.textContent = `Upcoming Events: ${towns.events}`;
         image.setAttribute('src', `images/${towns.photo}`);
         image.setAttribute('alt', `${towns.name} img`);
 
@@ -91,7 +92,6 @@ fetch(requestURL)
         insidecard.appendChild(population);
         insidecard.appendChild(rainfall);
         insidecard.appendChild(text);
-        insidecard.appendChild(events);
         card.appendChild(image);
         card.appendChild(insidecard);
         
@@ -99,3 +99,16 @@ fetch(requestURL)
       })
     }
   )
+
+let thedate = new Date();
+const friday = thedate.getDay();
+const banner = document.querySelector('.banner');
+
+if (thedate.getDay() == 5)
+{
+  document.querySelector('.banner').style.display = 'block';
+}
+else
+{
+  banner.style.display = "none";
+}

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 60em){
+    .menu{
+        display: flex;
+        top: 5rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .stock1{
+        width: 90%;
+    }
+
+    /*Lesson09*/
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+}

@@ -91,7 +91,7 @@ fetch(requestURL)
         insidecard.appendChild(population);
         insidecard.appendChild(rainfall);
         insidecard.appendChild(text);
-        insidecard.appendChild(events);
+        card.appendChild(events);
         card.appendChild(image);
         card.appendChild(insidecard);
         
