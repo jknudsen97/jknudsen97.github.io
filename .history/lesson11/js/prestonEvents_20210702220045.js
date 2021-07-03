@@ -10,7 +10,7 @@ fetch(requestURL)
     const idaho = towns.filter(
       towns => towns.name == "Preston");
 
-      idaho.forEach((towns) => {
+      idaho.for((towns) => {
         let card = document.createElement("article");
         let insidecard = document.createElement('section');
         let text = document.createElement("div");
