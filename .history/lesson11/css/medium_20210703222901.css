@@ -82,6 +82,7 @@
         border-collapse: collapse;
         margin-left: auto;
         margin-right: auto;
+        
         height: auto;
     }
 
@@ -129,4 +130,8 @@
           grid-column: 1;
           grid-row: 1;
       }
+
+    #events{
+        text-align: center;
+    }
 }

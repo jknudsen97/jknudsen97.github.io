@@ -82,6 +82,7 @@
         border-collapse: collapse;
         margin-left: auto;
         margin-right: auto;
+        
         height: auto;
     }
 
@@ -114,9 +115,6 @@
 
     /*Lesson 09*/
     article {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
         display: grid;
           grid-template-columns: 1fr 1fr;
       }
@@ -129,4 +127,8 @@
           grid-column: 1;
           grid-row: 1;
       }
+
+      #events{
+        text-align: center;   
+    }
 }

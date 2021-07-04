@@ -82,6 +82,7 @@
         border-collapse: collapse;
         margin-left: auto;
         margin-right: auto;
+        
         height: auto;
     }
 
@@ -116,7 +117,7 @@
     article {
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
+        text-align: right;
         display: grid;
           grid-template-columns: 1fr 1fr;
       }
