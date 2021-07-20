@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page</title>
+    <meta name="description" content="This will be the Nome chamber of commerce home page"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+    <link rel="stylesheet" href="css/large.css"/>
+</head>
+<body>
+    <header>
+            <a href="home.html"><img src="images/logo.jpg" alt="Nome Logo"></a>
+        <section class="headings">
+            <h1>Nome Sweet Home</h1>
+            <div class="motto">There's No Place Like Nome!</div>
+        </section>
+    </header>
+
+    <div class="nav">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="menu">
+            <li><a href="home.html" class="link">Home</a></li>
+            <li><a href="city.html" class="link">City</a></li>
+            <li><a href="join.html" class="current">Join</a></li>
+            <li><a href="directory.html" class="link">Directory</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+    </div>
+    <main>
+        <form action="thanks.html">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z]" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" pattern="[A-Za-z]" required><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" pattern="[A-Za-z]"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="tel"><br>
+            <label for="bname">Business Name:</label><br>
+            <input type="text" id="bname" name="bname" pattern="[A-Za-z].{5,}" required><br>
+            <label for="baddress">Business Address:</label><br>
+            <input type="text" id="baddress" name="baddress" pattern="[A-Za-z].{5,}"><br>
+            <label for="bwebsite">Business Website:</label><br>
+            <input type="text" id="bwebsite" name="bwebsite" pattern="[A-Za-z].{5,}"><br>
+            <label for="comments">Business Description:</label><br>
+            <textarea name="comment" id="comments" rows="4" cols="25"></textarea><br>
+
+            <label for="Membership">Membership Level:</label><br>
+            <select name="Membership" id="Membership">
+                <option value="non-profit">Non-Profit ($100)</option>
+                <option value="bronze">Bronze ($200)</option>
+                <option value="silver">Silver ($400)</option>
+                <option value="gold">Gold ($1,000)</option>
+            </select>
+            <br>
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </main>
+    <footer>
+        <div>&copy; Nome Sweet Home | Attributions | Jeremy Knudsen |&nbsp;</div> 
+        <div class="current2">
+            <span id="currentDayofWeek"></span>, &nbsp;
+            <span id="currentDay"></span> &nbsp; <span id="currentMonth"></span> &nbsp;  
+            <span id="currentYear"></span>
+        </div>
+    </footer>
+    <script defer src="js/script.js"></script>
+</body>
+</html>
