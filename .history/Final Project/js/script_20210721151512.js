@@ -109,13 +109,46 @@ window.onload = function() {
     }
 }
 
+//Severity Slider
+function adjustSeverity(severity) {
+  document.getElementById("severityvalue").innerHTML = severity;
+}
+
 //JSON
-fetch("json/bc.json")
+/*fetch("./json/database.json")
+  .then(function (response) {
+    return response.json();
+  })
+
+  .then(function (jsonObject) {
+    const bc = jsonObject["bc"];
+
+        let card = document.createElement("article");
+        let name = document.createElement("h1");
+        let logo = document.createElement("img");
+        let phone = document.createElement("p");
+        let url = document.createElement("p");
+
+        name.textContent = `${bc.name}`;
+        logo.setAttribute('src', `images/${bc.logo}`);
+        logo.setAttribute('alt', `${bc.name} img`);
+        phone.textContent = `Phone: ${bc.phone}`;
+        url.textContent = `Social Media: ${bc.url}`;
+
+        card.appendChild(name);
+        card.appendChild(logo);
+        card.appendChild(phone);
+        card.appendChild(url);
+        
+        document.querySelector("#places").appendChild(card);
+      })*/
+
+fetch("./json/bc.json")
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    const bc = jsonObject['bc'];
+    const database = jsonObject['bc'];
      {
         let card = document.createElement('section');
         let name = document.createElement('h2');
@@ -123,13 +156,13 @@ fetch("json/bc.json")
         let phone = document.createElement('p');
         let url = document.createElement('p');
 
-        name.textContent = `${bc.name}`;
+        name.textContent = `${database.name}`;
 
-        img.setAttribute('src', `images/${bc.logo}`);
-        img.setAttribute('alt', `${bc.name} img`);
+        img.setAttribute('src', `images/${database.logo}`);
+        img.setAttribute('alt', `${database.name} img`);
 
-        phone.textContent = `${bc.phone}`;
-        url.textContent = `${bc.url}`;
+        phone.textContent = `${database.phone}`;
+        url.textContent = `${database.url}`;
 
         card.appendChild(name);
         card.appendChild(img);
@@ -139,3 +172,16 @@ fetch("json/bc.json")
         document.querySelector('div.places').appendChild(card);
     }
   });
+
+let thedate = new Date();
+const friday = thedate.getDay();
+const banner = document.querySelector('.banner');
+
+if (thedate.getDay() == 5)
+{
+  document.querySelector('.banner').style.display = 'block';
+}
+else
+{
+  banner.style.display = "none";
+}
