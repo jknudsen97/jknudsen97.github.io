@@ -115,35 +115,8 @@ function adjustSeverity(severity) {
 }
 
 //JSON
+
 fetch("./json/database.json")
-  .then(function (response) {
-    return response.json();
-  })
-
-  .then(function (jsonObject) {
-    const bc = jsonObject["bc"];
-
-        let card = document.createElement("article");
-        let name = document.createElement("h1");
-        let logo = document.createElement("img");
-        let phone = document.createElement("p");
-        let url = document.createElement("p");
-
-        name.textContent = `${bc.name}`;
-        logo.setAttribute('src', `images/${bc.logo}`);
-        logo.setAttribute('alt', `${bc.name} img`);
-        phone.textContent = `Phone: ${bc.phone}`;
-        url.textContent = `Social Media: ${bc.url}`;
-
-        card.appendChild(name);
-        card.appendChild(logo);
-        card.appendChild(phone);
-        card.appendChild(url);
-        
-        document.querySelector("#places").appendChild(card);
-      })
-
-/*fetch("./json/database.json")
   .then(function (response) {
     return response.json();
   })
@@ -152,14 +125,13 @@ fetch("./json/database.json")
      {
         let card = document.createElement('section');
         let name = document.createElement('h2');
-        let img = document.createElement('img');
         let phone = document.createElement('p');
         let url = document.createElement('p');
 
         name.textContent = `${database.name}`;
 
-        img.setAttribute('src', `images/${database.logo}`);
-        img.setAttribute('alt', `${database.name} img`);
+        let img = document.createElement('img');
+        img.setAttribute('src', database[i].logo);
 
         phone.textContent = `${database.phone}`;
         url.textContent = `${database.url}`;
@@ -171,7 +143,7 @@ fetch("./json/database.json")
 
         document.querySelector('div.cards').appendChild(card);
     }
-  });*/
+  });
 
 let thedate = new Date();
 const friday = thedate.getDay();

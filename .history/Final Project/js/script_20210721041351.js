@@ -140,7 +140,7 @@ fetch("./json/database.json")
         card.appendChild(phone);
         card.appendChild(url);
         
-        document.querySelector("#places").appendChild(card);
+        document.querySelector("#directory").appendChild(card);
       })
 
 /*fetch("./json/database.json")

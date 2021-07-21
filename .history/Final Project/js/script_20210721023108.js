@@ -115,63 +115,29 @@ function adjustSeverity(severity) {
 }
 
 //JSON
-fetch("./json/database.json")
-  .then(function (response) {
-    return response.json();
-  })
 
-  .then(function (jsonObject) {
-    const bc = jsonObject["bc"];
-
-        let card = document.createElement("article");
-        let name = document.createElement("h1");
-        let logo = document.createElement("img");
-        let phone = document.createElement("p");
-        let url = document.createElement("p");
-
-        name.textContent = `${bc.name}`;
-        logo.setAttribute('src', `images/${bc.logo}`);
-        logo.setAttribute('alt', `${bc.name} img`);
-        phone.textContent = `Phone: ${bc.phone}`;
-        url.textContent = `Social Media: ${bc.url}`;
-
-        card.appendChild(name);
-        card.appendChild(logo);
-        card.appendChild(phone);
-        card.appendChild(url);
-        
-        document.querySelector("#places").appendChild(card);
-      })
-
-/*fetch("./json/database.json")
+fetch("json/database.json")
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    const database = jsonObject['database'];
-     {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const prophets = jsonObject['prophets'];
+    for (let i = 0; i < prophets.length; i++ ) {
         let card = document.createElement('section');
-        let name = document.createElement('h2');
+        let h2 = document.createElement('h2');
+        h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+
         let img = document.createElement('img');
-        let phone = document.createElement('p');
-        let url = document.createElement('p');
+        img.setAttribute('src', prophets[i].imageurl);
+        img.setAttribute('alt', 'Portraits of ${prophets[i].name} ${prophets[i].lastname}');
 
-        name.textContent = `${database.name}`;
-
-        img.setAttribute('src', `images/${database.logo}`);
-        img.setAttribute('alt', `${database.name} img`);
-
-        phone.textContent = `${database.phone}`;
-        url.textContent = `${database.url}`;
-
-        card.appendChild(name);
-        card.appendChild(img);
-        card.appendChild(phone);
-        card.appendChild(url);
+        card.append(h2);
+        card.append(img);
 
         document.querySelector('div.cards').appendChild(card);
     }
-  });*/
+  });
 
 let thedate = new Date();
 const friday = thedate.getDay();
