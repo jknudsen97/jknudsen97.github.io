@@ -241,26 +241,6 @@ img{
 }
 
 .sum-titles{
-    background-color: #8694cc;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.sum-titles li{
-    list-style-type: none;
-}
-
-.weather{
-    width: 200px;
-    background-color: #89c4dd;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.table{
-    margin-left: auto;
-    margin-right: auto;
 }
